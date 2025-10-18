@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+
+.card { @apply rounded-2xl shadow-raised-sm border border-gray-200/60 dark:border-slate-700/60 bg-white dark:bg-navy-card; }
+.btn { @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl font-medium transition-transform duration-150; }
+.btn-raised { @apply btn text-white shadow-raised; background: linear-gradient(180deg, #53d3a4, #3abf90); }
+.btn-outline { @apply btn border border-slate-300 text-slate-700 dark:text-slate-100 dark:border-slate-600 bg-transparent; }
+.input { @apply w-full rounded-xl px-3 py-2 border outline-none border-slate-300 bg-white text-slate-900; }
+.dark .input { @apply border-slate-600 bg-slate-800 text-slate-100; }
+.badge { @apply text-xs px-2 py-0.5 rounded-full; }
+.badge-muted { @apply bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-100; }
+.badge-weekend-sat { background:#fff7d6; color:#6b7280; }
+.badge-weekend-sun { background:#ffe5e5; color:#6b7280; }
+
+@media (prefers-color-scheme: dark) {
+  .bg-white { background-color: #172635 !important; }
+  .text-gray-600, .text-slate-600 { color: #e2e8f0 !important; }
+  .border-gray-200 { border-color: #334155 !important; }
+}
