@@ -17,6 +17,6 @@
 
 @media (prefers-color-scheme: dark) {
   .bg-white { background-color: #172635 !important; }
-  .text-gray-600, .text-slate-600 { color: #e2e8f0 !important; }
+  .text-gray-500, .text-slate-600 { color: #e2e8f0 !important; }
   .border-gray-200 { border-color: #334155 !important; }
 }
